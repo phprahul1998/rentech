@@ -1,0 +1,21 @@
+{
+    "menu": {
+        "home": "heim",
+        "about": "über uns"
+    },
+    "home": {
+        "welcome": "Möchten Sie Ihr Projekt starten?",
+        "description": "Die Entwicklung zuverlässiger und skalierbarer Softwarelösungen für jedes Betriebssystem, jeden Browser und jedes Gerät. Wir vereinen umfassende Branchenexpertise und die neuesten IT-Fortschritte, um maßgeschneiderte Lösungen und Produkte zu liefern, die perfekt auf die Bedürfnisse und das Verhalten ihrer Benutzer zugeschnitten sind.        ",
+        "learn": "Erfahren Sie mehr"
+    },
+    "about": {
+        "title": "Ein starkes Team        ",
+        "description": "Unser im Jahr 2000 gegründetes Unternehmen ist ein Anbieter von IT-Beratungs- und Softwareentwicklungsdienstleistungen. Nachdem wir als kleines KI-Produktunternehmen begonnen hatten, wechselten wir zu IT-Dienstleistungen und haben seitdem Nicht-IT-Organisationen und Softwareproduktunternehmen dabei geholfen, ihre Geschäftsleistung zu verbessern und schnell neue Kunden zu gewinnen.        ",
+        "expertise": {
+            "title": "Unser Erfahrungsschatz",
+            "mobile-dev": "Mobile Entwicklung",
+            "web-dev": "Web Entwicklung",
+            "it": "IT-Beratung"
+        }
+    }
+}
