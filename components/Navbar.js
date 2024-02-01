@@ -5,12 +5,20 @@ import Image from 'next/image'
 
 import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 export default function Navbar() {
 
     const { t, i18n } = useTranslation('en', { useSuspense: false });
 
-    const handleLangChange = (event) => i18n.changeLanguage(event.target.value)
+    const [toggleOn, setToggleOn] = useState(false);
+
+    const handleToggle = () => {
+        setToggleOn((prevToggle) => !prevToggle);
+        const newLang = toggleOn ? 'en' : 'fr';
+        i18n.changeLanguage(newLang);
+    };
+
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -41,17 +49,31 @@ export default function Navbar() {
                             </Link>
                         </li>
 
-                        <li className="nav-item">
-                            <select className="p-2" onChange={handleLangChange}>
-                                <option value='en' selected>EN</option>
-                                <option value='fr'>DE</option>
-                            </select>
-                        </li>
+
+
                     </ul>
-                    <div className="nav-icon" onClick={handleClick}>
-                        <i className={click ? 'FaTimes' : 'FaBars'}>
-                            {click ? <FaTimes /> : <FaBars />}
-                        </i>
+                    <div className="langbtn">
+                        <input
+                            onClick={handleToggle}
+                            value={toggleOn}
+                            name="toggle"
+                            type="checkbox"
+                            id="toggle"
+                            className="toggleCheckbox"
+                        />
+                        <label htmlFor="toggle" className="toggleContainer">
+                            <div>EN</div>
+                            <div>DE</div>
+                        </label>
+                    </div>
+                    <div className="nav-icon" >
+
+                        <div onClick={handleClick}>
+                            <i className={click ? 'FaTimes' : 'FaBars'}>
+                                {click ? <FaTimes /> : <BsThreeDotsVertical />}
+                            </i>
+                        </div>
+
                     </div>
                 </div>
             </nav>

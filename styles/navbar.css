@@ -42,7 +42,7 @@
     display: flex;
     list-style: none;
     text-align: center;
-    margin-right: 2rem;
+    margin-right: 12rem;
 }
 
 .nav-links {
@@ -78,12 +78,12 @@
 
 .nav-item:hover:after {
     width: 100%;
-    background: #ffdd40;
+    background: #5097D2;
 }
 
 .nav-item.active {
-    color: #ffdd40;
-    border: 1px solid #ffdd40;
+    color: #5097D2;
+    border: 1px solid #5097D2;
 }
 
 .nav-icon {
@@ -94,8 +94,8 @@
     .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        border-top: 1pxsolid #fff;
+        width: 70%;
+        height: 100dvh;
         position: absolute;
         top: 80px;
         left: -110%;
@@ -103,14 +103,14 @@
         transition: all 0.5s ease;
     }
     .nav-menu.active {
-        background: #1f5156;
+        background: #fff;
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
     }
     .nav-item .active {
-        color: #ffdd40;
+        color: #5097D2;
         border: none;
     }
     .nav-links {
@@ -121,11 +121,82 @@
     .nav-icon {
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 6px;
+        right: -10px;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #ffdd40;
+        color: #5097D2;
     }
+    .nav-logo img {
+        width: 120px !important;
+        height: 35px !important;
+        object-fit: contain !important;
+    }
+}
+
+.langbtn {
+    position: absolute;
+    right: 50px;
+    top: 13px;
+}
+
+.toggleContainer {
+    position: relative;
+    display: grid;
+    top: 10px;
+    right: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100px;
+    border: 2px solid #5097d2;
+    border-radius: 20px;
+    background: #5097d2;
+    color: #343434;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    border-radius: 20px;
+    background: white;
+    transition: all 0.3s;
+}
+
+.toggleCheckbox:checked+.toggleContainer::before {
+    left: 50%;
+}
+
+.toggleContainer div {
+    padding: 4px;
+    text-align: center;
+    z-index: 1;
+}
+
+.toggleCheckbox {
+    display: none;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:first-child {
+    color: white;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:last-child {
+    color: #343434;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox+.toggleContainer div:first-child {
+    color: #343434;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox+.toggleContainer div:last-child {
+    color: white;
+    transition: color 0.3s;
 }
