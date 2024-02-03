@@ -1,4 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        body {
+            font-family: 'Nunito', sans-serif !important;
+        }
+        /* Common styles for all devices */
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Nunito', sans-serif !important;
+            /* Replace 'YourFont' with your preferred font */
+            color: #00426A!important;
+            /* Replace with your desired text color */
+        }
+        
+        p {
+            font-family: 'Nunito', sans-serif !important;
+            /* Replace 'YourFont' with your preferred font */
+            color: #8F8F8F!important;
+            /* Replace with your desired text color */
+            line-height: 1.5!important;
+        }
+        
+        .homepage {
+            padding: 10px !important;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        h1,
+        h2 {
+            font-weight: 800 !important;
+            color: #00426A !important;
+            font-size: 26px !important;
+        }
+        
+        p {
+            color: #8F8F8F !important;
+            font-size: 16px !important;
+        }
+        
+        .MultiStepForm {
+            position: relative;
+            top: 20px;
+        }
+        
+        .stepform h4 {
+            font-weight: 800;
+            font-size: 16px !important;
+        }
+        
+        .box {
+            height: 100px;
+            flex: 1;
+            /* Adjust the height as needed */
+            background-color: #99CC00;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .box.selected {
+            background-color: #66bb6a;
+            /* Change this to your desired background color */
+            color: #fff;
+            /* Change this to your desired text color */
+        }
+        
+        .finalstepform {
+            margin-top: 0px;
+        }
+        
+        .locationtype {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* Adjust the gap value as needed */
+        }
+        
+        @media (max-width: 700px) {
+            .homepage {
+                padding: 10px !important;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+            .finalstepform {
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+            .advantages_div {
+                display: grid !important;
+            }
+            h1,
+            h2 {
+                font-weight: 800 !important;
+                color: #00426A !important;
+                font-size: 20px !important;
+            }
+            .stepform h4 {
+                font-size: 20px !important;
+            }
+            .advantages_list h4 {
+                font-size: 20px !important;
+            }
+            p {
+                color: #8F8F8F !important;
+                font-size: 15px !important;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .box {
+                flex: 1;
+                widows: 20%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .box {
+                flex: none;
+                width: calc(50% - 10px);
+            }
+        }
+        
+        .rethink {
+            background-image: url('/img/rethink.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 60dvh;
+            max-height: 80dvh;
+        }
+        
+        .advantages_div {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .advantages_list {
+            background-color: #ABCAE5;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+            padding: 40px;
+        }
+        
+        .advantages_list h4 {
+            color: #fff !important;
+            font-weight: 700 !important;
+            font-size: 25px !important;
+        }
+        
+        .advantages_list p {
+            color: #0D0F11 !important;
+        }
+        
+        .footer {
+            background-color: #F2F5F8;
+            padding: 5px;
+            margin-top: 20px;
+            width: 100%;
+            margin-top: 40px;
+        }

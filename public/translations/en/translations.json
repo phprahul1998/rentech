@@ -19,5 +19,45 @@
             "web-dev": "Web Development",
             "it": "IT consulting"
         }
+    },
+    "step1": {
+        "heading": "Your PV provider check in 10 steps -  ",
+        "subheading": "Where Should the photovoltaic system be installed ?"
+    },
+
+    "rethinkenergy": {
+        "rethinkheading": "Rethink energy!",
+        "subheading": "We compare all available providers and find the best solution for you!",
+        "para": "By installing a photovoltaic system, you can not only reduce your electricity costs, but also independently design your energy supply and secure it in the long term. <br><br>  Our service is suitable for both private households and commercial businesses.We will help you find the optimal offer."
+    },
+    "advantages": {
+        "heading": "Your advantages through one <br/> PV system: ",
+        "box": [{
+                "heading": "Independence",
+                "para": "By having your own PV system, you become independent of rising electricity costs. You are in control and in the long term, you can even make a profit."
+            },
+            {
+                "heading": "Increase in Value",
+                "para": "With your own PV system, you can significantly increase the value of your property. Photovoltaic systems are future-proof and environmentally friendly."
+            }
+        ],
+        "ourtip": "Our tip:",
+        "para": "Do you know Tibber? Tibber offers dynamic electricity tariffs and is therefore ideal for PV operators with electricity storage!"
+    },
+    "inquery": {
+        "heading": "Do you have questions?",
+        "para": "We would be happy to answer any questions you may have about the topic of “photovoltaics” free of charge and without obligation.Simply fill out the contact form and we willget in touch immediately!"
+    },
+    "person_details": {
+        "firstname": "First Name",
+        "lastname": "Last Name",
+        "regarding": "Regarding",
+        "yourmessage": "Your Message",
+        "sendmessage": "Send Message"
+    },
+    "footer": {
+        "para": "© Copyright Renevatec All Rights Reserved."
     }
+
+
 }

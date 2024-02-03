@@ -1,23 +1,61 @@
 {
     "menu": {
-        "home": "heim",
-        "about": "über uns"
+        "home": "Startseite",
+        "about": "Über uns"
     },
     "home": {
-        "main_heading": "Kostenloser PV-Anbieter-Check",
-        "main_desc": "Wir helfen Ihnen, das beste Photovoltaik-Angebot für Ihre Bedürfnisse zu finden – völlig kostenlos und unverbindlich! Mit unserem speziell für Privatpersonen und Gewerbetreibende entwickelten Tool können Kunden und Anbieter in Kontakt treten, ohne dass Ihre Daten an unzählige Anbieter weitergegeben werden. Unser Ziel ist es, den idealen Photovoltaik-Anbieter für Sie zu finden.",
+        "main_heading": "Kostenlose PV-Anbieterprüfung",
+        "main_desc": "Wir helfen Ihnen, das beste Photovoltaik-Angebot für Ihre Bedürfnisse zu finden - völlig kostenlos und unverbindlich! Mit unserem speziell für Privatpersonen und Unternehmen entwickelten Tool können Kunden und Anbieter in Kontakt treten, ohne dass Ihre Daten an unzählige Anbieter weitergegeben werden. Unser Ziel ist es, den idealen Photovoltaik-Anbieter für Sie zu finden.",
         "welcome": "Möchten Sie Ihr Projekt starten?",
-        "description": "Die Entwicklung zuverlässiger und skalierbarer Softwarelösungen für jedes Betriebssystem, jeden Browser und jedes Gerät. Wir vereinen umfassende Branchenexpertise und die neuesten IT-Fortschritte, um maßgeschneiderte Lösungen und Produkte zu liefern, die perfekt auf die Bedürfnisse und das Verhalten ihrer Benutzer zugeschnitten sind.        ",
+        "description": "Die Entwicklung zuverlässiger und skalierbarer Softwarelösungen für jedes Betriebssystem, jeden Browser und jedes Gerät. Wir vereinen tiefgreifendes Branchenwissen und die neuesten IT-Entwicklungen, um maßgeschneiderte Lösungen und Produkte zu liefern, die perfekt zu den Bedürfnissen und dem Verhalten ihrer Benutzer passen.",
         "learn": "Erfahren Sie mehr"
     },
     "about": {
-        "title": "Ein starkes Team        ",
-        "description": "Unser im Jahr 2000 gegründetes Unternehmen ist ein Anbieter von IT-Beratungs- und Softwareentwicklungsdienstleistungen. Nachdem wir als kleines KI-Produktunternehmen begonnen hatten, wechselten wir zu IT-Dienstleistungen und haben seitdem Nicht-IT-Organisationen und Softwareproduktunternehmen dabei geholfen, ihre Geschäftsleistung zu verbessern und schnell neue Kunden zu gewinnen.        ",
+        "title": "Ein starkes Team",
+        "description": "Gegründet im Jahr 2000 ist unser Unternehmen Anbieter von IT-Beratungs- und Softwareentwicklungsdienstleistungen. Als kleines KI-Produktunternehmen gestartet, haben wir uns zu IT-Dienstleistungen entwickelt und seitdem non-IT-Organisationen und Softwareproduktunternehmen geholfen, ihre Geschäftsleistung zu verbessern und schnell neue Kunden zu gewinnen.",
         "expertise": {
-            "title": "Unser Erfahrungsschatz",
+            "title": "Unsere Expertise",
             "mobile-dev": "Mobile Entwicklung",
-            "web-dev": "Web Entwicklung",
+            "web-dev": "Webentwicklung",
             "it": "IT-Beratung"
         }
+    },
+    "step1": {
+        "heading": "Ihre PV-Anbieterprüfung in 10 Schritten -",
+        "subheading": "Wo soll das Photovoltaik-System installiert werden?"
+    },
+
+    "rethinkenergy": {
+        "rethinkheading": "Energie neu denken!",
+        "subheading": "Wir vergleichen alle verfügbaren Anbieter und finden die beste Lösung für Sie!",
+        "para": "Durch die Installation eines Photovoltaik-Systems können Sie nicht nur Ihre Stromkosten senken, sondern auch Ihre Energieversorgung unabhängig gestalten und langfristig sichern. <br><br> Unser Service eignet sich sowohl für Privathaushalte als auch für Unternehmen. Wir helfen Ihnen, das optimale Angebot zu finden."
+    },
+    "advantages": {
+        "heading": "Ihre Vorteile durch ein <br/> PV-System:",
+        "box": [{
+                "heading": "Unabhängigkeit",
+                "para": "Mit Ihrem eigenen PV-System werden Sie unabhängig von steigenden Stromkosten. Sie haben die Kontrolle und können langfristig sogar Gewinne erzielen."
+            },
+            {
+                "heading": "Wertsteigerung",
+                "para": "Mit Ihrem eigenen PV-System können Sie den Wert Ihrer Immobilie erheblich steigern. Photovoltaik-Systeme sind zukunftssicher und umweltfreundlich."
+            }
+        ],
+        "ourtip": "Unser Tipp:",
+        "para": "Kennen Sie Tibber? Tibber bietet dynamische Stromtarife und ist daher ideal für PV-Betreiber mit Stromspeicher!"
+    },
+    "inquery": {
+        "heading": "Haben Sie Fragen?",
+        "para": "Wir beantworten gerne kostenlos und unverbindlich alle Fragen zum Thema Photovoltaik. Füllen Sie einfach das Kontaktformular aus, und wir melden uns umgehend!"
+    },
+    "person_details": {
+        "firstname": "Vorname",
+        "lastname": "Nachname",
+        "regarding": "Betreff",
+        "yourmessage": "Ihre Nachricht",
+        "sendmessage": "Nachricht senden"
+    },
+    "footer": {
+        "para": "© Copyright Renevatec. Alle Rechte vorbehalten."
     }
 }

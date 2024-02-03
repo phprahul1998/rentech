@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Navbar />
-    <div className='container'>
+    <div className='section'>
       <Component {...pageProps} />
     </div>
     </>
