@@ -1,6 +1,8 @@
 import Navbar from '../components/Navbar'
 import '../styles/index.css'
 import '../styles/navbar.css'
+import '../styles/multistep.css'
+
 import i18next from 'i18next'
 import { initReactI18next } from "react-i18next"
 import Backend from 'i18next-http-backend'

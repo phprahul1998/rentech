@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
-import MultiStepForm from '../components/multi-step-form/MultiStepForm';
+import MultiStepForm from '../components/MultiStepForm';
 import Rethinkenergy from '../components/Rethinkenergy';
 import Advantage from '../components/Advantage';
 import Inquery from '../components/Inquery';

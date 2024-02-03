@@ -1,0 +1,76 @@
+.MultiStepForm {
+    text-align: center
+}
+
+.commonbtn {
+    display: inline-block;
+    width: 210px;
+    background-color: #99CC00;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    /* Adjust as needed to leave some space between buttons on desktop and tablet */
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    height: 135px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    /* Adjust the height as needed */
+    /* Adjust the font weight as needed */
+}
+
+.dotted-line {
+    display: inline-block;
+    font-size: 0;
+    /* To remove white space between inline-block elements */
+}
+
+.dotted-line span {
+    display: inline-block;
+    border-bottom: 15px solid #d9d9d9;
+    width: 61px;
+    margin-right: 6px;
+    border-radius: 33px;
+}
+
+.dotted-line span.completed {
+    border-bottom-color: #99CC00;
+}
+
+
+/* Media query for screens smaller than 768px (typical tablet size) */
+
+@media (max-width: 768px) {
+    .commonbtn {
+        width: 45%;
+        margin: 1% 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    .commonbtn {
+        display: block;
+        width: 45%;
+        margin: 1% 1%;
+    }
+}
+
+.error-message {
+    color: red;
+}
+
+.submitbtn {
+    background: #FFF;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    color: #99CC00;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center
+}
