@@ -51,9 +51,15 @@ const MultiStepForm = () => {
 
   return (
     <div className="multistep-form">
+      <h2>Your PV provider check in 10 steps:</h2>
       <div className="dotted-line">
         {Array.from({ length: 10 }, (_, index) => (
-          <span key={index} className={index < step - 1 ? 'completed' : ''}></span>
+          <span
+            key={index}
+            className={`${
+              index < step ? 'completed' : ''
+              } ${index === step - 1 ? 'selected' : ''}`}
+          ></span>
         ))}
       </div>
       {step === 1 && (
@@ -95,7 +101,7 @@ const MultiStepForm = () => {
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_40_m2')} style={formData[`step${step}`] === '25_40_m2' ? { backgroundColor: 'green' } : {}}>25 - 40 m2</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('40_100_m2')} style={formData[`step${step}`] === '40_100_m2' ? { backgroundColor: 'green' } : {}}>40 - 100 m2</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('over_100_m2')} style={formData[`step${step}`] === 'over_100_m2' ? { backgroundColor: 'green' } : {}}>over 100 m2</button>
-          <div className="submitbtn">
+          <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>
         </form>
@@ -109,7 +115,7 @@ const MultiStepForm = () => {
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Gable_roof')} style={formData[`step${step}`] === 'Gable_roof' ? { backgroundColor: 'green' } : {}}>Gable roof</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hip_roof')} style={formData[`step${step}`] === 'Hip_roof' ? { backgroundColor: 'green' } : {}}>Hip roof</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Other')} style={formData[`step${step}`] === 'Other' ? { backgroundColor: 'green' } : {}}>Other</button>
-          <div className="submitbtn">
+          <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>
         </form>
@@ -123,7 +129,7 @@ const MultiStepForm = () => {
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Ost')} style={formData[`step${step}`] === 'Ost' ? { backgroundColor: 'green' } : {}}>Ost</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('West')} style={formData[`step${step}`] === 'West' ? { backgroundColor: 'green' } : {}}>West</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Southwest_southeast')} style={formData[`step${step}`] === 'Southwest_southeast' ? { backgroundColor: 'green' } : {}}>Southwest/southeast</button>
-          <div className="submitbtn">
+          <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>
         </form>
@@ -138,9 +144,9 @@ const MultiStepForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <div className="submitbtn">
-            <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
-            <button onClick={handleNextButtonClick}>Next</button>
+          <div>
+            <button className="backbtn" type="button" onClick={handleBackButtonClick}><span>Back</span></button>
+            <button className="nextbtn" onClick={handleNextButtonClick}>Next</button>
           </div>
           {error && <p className="error-message">{error}</p>}
         </form>
@@ -153,7 +159,7 @@ const MultiStepForm = () => {
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 1 - 3 months')} style={formData[`step${step}`] === 'in 1 - 3 months' ? { backgroundColor: 'green' } : {}}>in 1 - 3 months</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 3 - 6  months')} style={formData[`step${step}`] === 'in 3 - 6  months' ? { backgroundColor: 'green' } : {}}>in 3 - 6  months</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('other')} style={formData[`step${step}`] === 'other' ? { backgroundColor: 'green' } : {}}>Other</button>
-          <div className="submitbtn">
+          <div backbtn>
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>
         </form>
@@ -169,7 +175,7 @@ Electricity storage Self-construction
           </button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Smart Energy  Management West')} style={formData[`step${step}`] === 'Smart Energy  Management West' ? { backgroundColor: 'green' } : {}}>Smart Energy  Management West</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('extension  existing PV system Southwest/southeast')} style={formData[`step${step}`] === 'extension  existing PV system Southwest/southeast' ? { backgroundColor: 'green' } : {}}>extension  existing PV system Southwest/southeast</button>
-          <div className="submitbtn">
+          <div backbtn>
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>        </form>
 
@@ -181,7 +187,7 @@ Electricity storage Self-construction
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('Equity capital')} style={formData[`step${step}`] === 'Equity capital' ? { backgroundColor: 'green' } : {}}>Equity capital </button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('financing')} style={formData[`step${step}`] === 'financing' ? { backgroundColor: 'green' } : {}}>Financing</button>
           <button className="commonbtn" type="button" onClick={() => handleButtonClick('both')} style={formData[`step${step}`] === 'both' ? { backgroundColor: 'green' } : {}}>Both</button>
-          <div className="submitbtn">
+          <div backbtn>
             <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
           </div>
         </form>
@@ -196,9 +202,9 @@ Electricity storage Self-construction
             value={address}
             onChange={(e) => setAddress(e.target.value)}
           />
-          <div className="submitbtn">
-            <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
-            <button onClick={handleNextButtonClick}>Next</button>
+          <div >
+            <button className="backbtn" type="button" onClick={handleBackButtonClick}><span>Back</span></button>
+            <button className="nextbtn" onClick={handleNextButtonClick}>Next</button>
           </div>
 
           {error && <p className="error-message">{error}</p>}
@@ -214,9 +220,9 @@ Electricity storage Self-construction
             value={address}
             onChange={(e) => setAddress(e.target.value)}
           />
-          <div className="submitbtn">
-            <button type="button" onClick={handleBackButtonClick}><span>Back</span></button>
-            <button onClick={handleSendRequest}>Send request</button>
+          <div >
+            <button className="backbtn" type="button" onClick={handleBackButtonClick}><span>Back</span></button>
+            <button className="nextbtn" onClick={handleSendRequest}>Send request</button>
           </div>
 
           {error && <p className="error-message">{error}</p>}
