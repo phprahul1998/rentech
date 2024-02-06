@@ -67,10 +67,9 @@ export default function Navbar() {
                         </label>
                     </div>
                     <div className="nav-icon" >
-
                         <div onClick={handleClick}>
                             <i className={click ? 'FaTimes' : 'FaBars'}>
-                                {click ? <FaTimes /> : <BsThreeDotsVertical />}
+                                {click ? <FaTimes /> : <FaBars />}
                             </i>
                         </div>
 

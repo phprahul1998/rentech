@@ -6,32 +6,39 @@
 .MultiStepForm h2 {
     color: #787878 !important;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .multistep-form form h2 {
     color: #000 !important;
-    font-size: 14px !important;
+    font-size: 18px !important;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 30px;
+    font-weight: 600 !important
+}
+
+.multistep-form form span {
+    position: absolute;
+    right: 20px;
+    top: 105px;
+    font-size: 28px;
+    color: #F18700;
 }
 
 .commonbtn {
     display: inline-block;
     width: 210px;
-    background-color: #99CC00;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    /* Adjust as needed to leave some space between buttons on desktop and tablet */
+    background-color: #7A7A7A;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
     color: #fff;
     text-align: center;
-    height: 135px;
+    height: 140px;
+    font-weight: 600;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
-    /* Adjust the height as needed */
-    /* Adjust the font weight as needed */
 }
 
 .dotted-line {
@@ -49,7 +56,7 @@
 }
 
 .dotted-line span.completed {
-    border-bottom-color: #99CC00;
+    border-bottom-color: #F18700;
 }
 
 
@@ -84,28 +91,26 @@
     padding: 10px;
     width: 100px;
     margin: 5px;
-    color: #99CC00;
+    color: #000;
     transition: all 0.5s;
     cursor: pointer;
-    /* border: 1px solid #000; */
-    border-radius: 24px;
+    border-radius: 8px;
     text-align: center;
     float: right;
-    font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .nextbtn {
-    background: #d9d9d9;
+    background: #F18700;
     padding: 10px;
-    width: 100px;
+    width: 135px;
     margin: 5px;
-    color: #99CC00;
+    color: #fff;
     transition: all 0.5s;
     cursor: pointer;
     /* border: 1px solid #000; */
-    border-radius: 24px;
+    border-radius: 8px;
     text-align: center;
-    font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    float: inline-end;
 }

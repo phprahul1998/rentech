@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 20;
-    border-bottom: 10px solid #98bcde;
+    border-bottom: 10px solid #F8C380;
 }
 
 .nav-container {
@@ -29,7 +29,7 @@
 }
 
 .nav-logo {
-    color: #f5b921;
+    color: #F8C380;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -78,12 +78,12 @@
 
 .nav-item:hover:after {
     width: 100%;
-    background: #5097D2;
+    background: #F8C380;
 }
 
 .nav-item.active {
-    color: #5097D2;
-    border: 1px solid #5097D2;
+    color: #F8C380;
+    border: 1px solid #F8C380;
 }
 
 .nav-icon {
@@ -110,7 +110,7 @@
         z-index: 1;
     }
     .nav-item .active {
-        color: #5097D2;
+        color: #F8C380;
         border: none;
     }
     .nav-links {
@@ -126,7 +126,7 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #5097D2;
+        color: #6B6B6B;
     }
     .nav-logo img {
         width: 120px !important;
@@ -148,9 +148,9 @@
     right: 20px;
     grid-template-columns: repeat(2, 1fr);
     width: 100px;
-    border: 2px solid #5097d2;
+    border: 2px solid #F8C380;
     border-radius: 20px;
-    background: #5097d2;
+    background: #F18700;
     color: #343434;
     cursor: pointer;
     font-size: 12px;
