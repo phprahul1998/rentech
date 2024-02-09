@@ -52,79 +52,35 @@
         "para": "© Copyright Renevatec. Alle Rechte vorbehalten."
     },
     "stepform": {
-        "main_heading1": "Ihr PV-Anbieter-Check in 10 Schritten:",
-        "laststep": "<h2>Fertig!</h2><p>Vielen Dank für Ihre Anfrage und Ihr Vertrauen! Wir freuen uns darauf, den richtigen Anbieter für Sie zu finden, und werden uns so schnell wie möglich bei Ihnen melden! <br/> <br/> Möchten Sie weitere Anfragen stellen? Klicken Sie einfach auf die Schaltfläche „Weitere Anfrage“. </p>",
-        "formdata": {
+        "main_heading": "Überprüfung Ihres PV-Anbieters in 10 Schritten:",
+        "formstep": {
             "step1": {
-                "heading": "Wo soll das PV-System installiert werden?",
-                "option1": "Einfamilienhaus",
-                "option2": "Mehrfamilienhaus",
+                "heading": "Wo sollte das PV-System installiert werden?",
+                "option1": "Freistehendes Haus",
+                "option2": "Wohngebäude",
                 "option3": "Gewerbegebäude",
-                "option4": "Sonstiges"
+                "option4": "Verschiedenes"
             },
             "step2": {
-                "heading": "Wie viel Platz steht Ihnen zur Verfügung?",
+                "heading": "Wie viel verfügbaren Platz haben Sie?",
                 "option1": "25 m2",
                 "option2": "25 - 40 m2",
                 "option3": "40 - 100 m2",
                 "option4": "über 100 m2"
             },
-            "step3": {
-                "heading": "Um welche Art von Dach handelt es sich?",
-                "option1": "Flachdach",
-                "option2": "Satteldach",
-                "option3": "Walmdach",
-                "option4": "Sonstiges"
-            },
-            "step4": {
-                "heading": "In welche Richtung zeigt Ihr Objekt?",
-                "option1": "Süden",
-                "option2": "Osten",
-                "option3": "Westen",
-                "option4": "Südwesten/Südosten"
-            },
-            "step5": {
-                "heading": "Was ist Ihr erwarteter Stromverbrauch?"
-            },
-            "step6": {
-                "heading": "Wann möchten Sie das Projekt umsetzen?",
-                "option1": "Sofort",
-                "option2": "In 1 - 3 Monaten",
-                "option3": "In 3 - 6 Monaten",
-                "option4": "Unbestimmt"
-            },
-            "step7": {
-                "heading": "Welches Photovoltaiksystem möchten Sie?",
-                "option1": "Stromspeicher <br /> inklusive Installation",
-                "option2": "PV-Anlage <br /> Stromspeicher <br /> Selbstmontage",
-                "option3": "Inkl. <br /> Smart Energy Management",
-                "option4": "Erweiterung bestehend <br /> Inkl. PV-Anlage"
-            },
-            "step8": {
-                "heading": "Wie möchten Sie das Projekt finanzieren?",
-                "option1": "Eigenkapital",
-                "option2": "Finanzierung",
-                "option3": "Beides",
-                "option4": "Ratenkauf"
-            },
-            "step9": {
-                "heading": "Wo befindet sich Ihr Projekt?",
-                "postal_code": "PLZ",
-                "location": "Ort",
-                "street": "Straße",
-                "no": "Nr."
-            },
-            "step10": {
-                "heading": "Für wen ist das Angebot gedacht?",
-                "Salutation": "Anrede",
-                "firstname": "Vorname",
-                "lastname": "Nachname",
-                "telephone": "Telefon",
-                "email": "E-Mail",
-                "whatsapp": "WhatsApp"
-            }
-        }
+            // "step2": "Wie viel verfügbaren Platz haben Sie?",
+            "step3": "Um was für ein Dach handelt es sich?",
+            "step4": "In welche Richtung zeigt Ihr Objekt?",
+            "step5": "Was ist Ihr erwarteter Stromverbrauch?",
+            "step6": "Wann möchten Sie das Projekt umsetzen?",
+            "step7": "Welches Photovoltaiksystem möchten Sie?",
+            "step8": "Wie möchten Sie das Projekt finanzieren?",
+            "step9": "Wo befindet sich Ihr Projekt?",
+            "step10": "Für wen ist das Angebot gedacht?"
+        },
+        "laststep": "<h2>Fertig!</h2><p>Vielen Dank für Ihre Anfrage und Ihr Vertrauen! Wir freuen uns darauf, den richtigen Anbieter für Sie zu finden und werden uns so schnell wie möglich bei Ihnen melden! <br/> <br/> Möchten Sie weitere Anfragen stellen? Klicken Sie dazu einfach auf die Schaltfläche „Weitere Anfrage“.</p>"
     },
+
     "button": {
         "btnNext": "Weiter",
         "btnBack": "Zurück",
@@ -146,4 +102,6 @@
         "yourmessage": "Ihre Nachricht",
         "sendmessage": "Nachricht senden"
     }
+
+
 }

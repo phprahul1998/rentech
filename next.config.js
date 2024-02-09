@@ -4,7 +4,12 @@ const nextConfig = {
   react: {
     useSuspense: false,
     wait: true
-  }
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    }
+  },
 }
 
 module.exports = nextConfig

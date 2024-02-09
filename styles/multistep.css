@@ -41,6 +41,15 @@
     border-radius: 20px;
 }
 
+.commonbtn img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px !important;
+    height: 45px !important;
+    object-fit: scale-down;
+}
+
 .dotted-line {
     display: flex;
     font-size: 0;

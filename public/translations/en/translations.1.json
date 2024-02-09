@@ -53,9 +53,8 @@
         "para": "© Copyright Renevatec All Rights Reserved."
     },
     "stepform": {
-        "main_heading1": "Your PV provider check in 10 steps:",
-        "laststep": "<h2>Done !</h2><p>Thank you very much for your inquiry and your trust! We look forward to finding the right provider for you and willget back to you as soon as possible! <br/> <br/> Would you like to make further inquiries ? To do this, simply click on the“ Further inquiry” button. </p>",
-        "formdata": {
+        "main_heading": "Your PV provider check in 10 steps:",
+        "formstep": {
             "step1": {
                 "heading": "Where should the PV system be installed?",
                 "option1": "Detached house",
@@ -70,65 +69,16 @@
                 "option3": "40 - 100 m2",
                 "option4": "over 100 m2"
             },
-            "step3": {
-                "heading": "What type of roof is it?",
-                "option1": "Flat roof",
-                "option2": "Gable roof",
-                "option3": "Hip roof",
-                "option4": "Other"
-            },
-            "step4": {
-                "heading": "In which direction is your subject facing?",
-                "option1": "South",
-                "option2": "East",
-                "option3": "West",
-                "option4": "Southwest/Southeast"
-
-            },
-            "step5": {
-                "heading": "What is your expected electricity consumption?"
-            },
-            "step6": {
-                "heading": "When would you like to implement the project?",
-                "option1": "Immediately",
-                "option2": "In 1 - 3 Months",
-                "option3": "In 3 - 6  Months",
-                "option4": "Indefinite"
-
-            },
-            "step7": {
-                "heading": "Which photovoltaic system do you want?",
-                "option1": "Electricity storage  <br /> including installation",
-                "option2": " PV system  <br />  Electricity storage < br / > Self - construction ",
-                "option3": " Incl .  <br />Smart Energy  Management",
-                "option4": "Extension  existing  Incl. PV system "
-
-            },
-            "step8": {
-                "heading": "How would you like to finance the project?",
-                "option1": "Equity capital",
-                "option2": "Financing",
-                "option3": "Both",
-                "option4": "Hire purchase"
-
-            },
-            "step9": {
-                "heading": "Where is your project located?",
-                "postal_code": "PLZ",
-                "location": "Location",
-                "street": "Street",
-                "no": "No."
-            },
-            "step10": {
-                "heading": "Who is the offer intended for?",
-                "Salutation": "Salutation",
-                "firstname": "First Name",
-                "lastname": "Last Name",
-                "telephone": "Telephone",
-                "email": "E-mail",
-                "whatsapp": "WhatsApp"
-            }
-        }
+            "step3": "What type of roof is it?",
+            "step4": "In which direction is your subject facing?",
+            "step5": "What is your expected electricity consumption?",
+            "step6": "When would you like to implement the project?",
+            "step7": "Which photovoltaic system do you want?",
+            "step8": "How would you like to finance the project?",
+            "step9": "Where is your project located?",
+            "step10": "Who is the offer intended for?"
+        },
+        "laststep": "<h2>Done !</h2><p>Thank you very much for your inquiry and your trust! We look forward to finding the right provider for you and willget back to you as soon as possible! <br/> <br/> Would you like to make further inquiries ? To do this, simply click on the“ Further inquiry” button. </p>"
     },
     "button": {
         "btnNext": "Next",
@@ -137,21 +87,20 @@
         "btninquiry": "Further inquiry"
     },
     "person_details": {
-        "Salutation": "Salutation",
         "firstname": "First Name",
         "lastname": "Last Name",
-        "telephone": "Telephone",
-        "email": "E-mail",
-        "whatsapp": "WhatsApp",
         "postal_code": "PLZ",
         "location": "Location",
         "street": "Street",
         "no": "No.",
+        "Salutation": "Salutation",
+        "telephone": "Telephone",
+        "email": "E-mail",
+        "whatsapp": "WhatsApp",
         "regarding": "Regarding",
         "yourmessage": "Your Message",
         "sendmessage": "Send Message"
     }
-
 
 
 

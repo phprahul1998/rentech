@@ -14,20 +14,20 @@ export default function Home() {
   return (
     <div className="sectionData">
       <div className="container">
-      <div className="row homepage">
-        <div className="col-md-12">
-          <div className="homepage">
-            <h1 className="">{t('home.main_heading', 'Default Heading')}</h1>
-            <p className="">
-              {t('home.main_desc', 'Default Heading')}
-            </p>
+        <div className="row homepage">
+          <div className="col-md-12">
+            <div className="homepage">
+              <h1 className="">{t('home.main_heading', 'Default Heading')}</h1>
+              <p className="">
+                {t('home.main_desc', 'Default Heading')}
+              </p>
+            </div>
+          </div>
+          <div className="col-md-12 MultiStepForm">
+            <MultiStepForm />
+
           </div>
         </div>
-        <div className="col-md-12 MultiStepForm">
-          <MultiStepForm />
-
-        </div>
-      </div>
       </div>
       <Rethinkenergy />
       <Advantage />
