@@ -17,7 +17,7 @@ export default function Rethinkenergy() {
                         </h2>
                     </div>
                 </div>
-                <div data-aos="fade-left" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div data-aos="fade-up" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h2 className="p-2">{t('rethinkenergy.subheading')}</h2>
                     <p className="p-2" dangerouslySetInnerHTML={{ __html: t('rethinkenergy.para') }} />
                 </div>

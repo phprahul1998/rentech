@@ -23,7 +23,7 @@ export default function Home() {
       <div className="container">
         <div className="row homepage">
           <div className="col-md-12">
-            <div data-aos="fade-right" className="homepage">
+            <div data-aos="fade-up" className="homepage">
               <h1 className="">{t('home.main_heading', 'Default Heading')}</h1>
               <p className="">
                 {t('home.main_desc', 'Default Heading')}

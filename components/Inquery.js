@@ -10,7 +10,7 @@ export default function Inquery() {
         <div className="container">
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                    <h2 data-aos="fade-right" className="pt-4" dangerouslySetInnerHTML={{ __html: t('inquery.heading') }} />
+                    <h2 data-aos="fade-up" className="pt-4" dangerouslySetInnerHTML={{ __html: t('inquery.heading') }} />
 
 
                     <p dangerouslySetInnerHTML={{ __html: t('inquery.para') }} />

@@ -12,7 +12,7 @@ export default function Advantage() {
         <div className="container">
             <div className="row  mb-4 mt-4">
                 <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-                    <h2 data-aos="fade-right" className="p-3" dangerouslySetInnerHTML={{ __html: t('advantages.heading') }} />
+                    <h2 data-aos="fade-up" className="p-3" dangerouslySetInnerHTML={{ __html: t('advantages.heading') }} />
 
                     <div className="advantages_div">
                         {advantagesArray.map((advantage, index) => (
