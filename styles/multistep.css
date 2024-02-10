@@ -123,3 +123,15 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     float: inline-end;
 }
+
+
+/* CSS */
+
+.step-content {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.step-content.hidden {
+    opacity: 0;
+}

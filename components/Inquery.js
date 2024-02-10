@@ -3,21 +3,21 @@ import { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from 'next/image'
 import { useTranslation } from "react-i18next";
-
 export default function Inquery() {
     const { t, i18n } = useTranslation('en', { useSuspense: false });
+
     return (
         <div className="container">
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                    <h2 className="pt-4" dangerouslySetInnerHTML={{ __html: t('inquery.heading') }} />
+                    <h2 data-aos="fade-right" className="pt-4" dangerouslySetInnerHTML={{ __html: t('inquery.heading') }} />
 
 
                     <p dangerouslySetInnerHTML={{ __html: t('inquery.para') }} />
 
                 </div>
 
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div data-aos="fade-up" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                     <div className="row">
                         <div className="col-6">
                             <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"

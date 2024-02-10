@@ -7,23 +7,30 @@ import Rethinkenergy from '../components/Rethinkenergy';
 import Advantage from '../components/Advantage';
 import Inquery from '../components/Inquery';
 import Footer from '../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   const { t } = useTranslation('en', { useSuspense: false });
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
 
+  }, [])
   return (
     <div className="sectionData">
       <div className="container">
         <div className="row homepage">
           <div className="col-md-12">
-            <div className="homepage">
+            <div data-aos="fade-right" className="homepage">
               <h1 className="">{t('home.main_heading', 'Default Heading')}</h1>
               <p className="">
                 {t('home.main_desc', 'Default Heading')}
               </p>
             </div>
           </div>
-          <div className="col-md-12 MultiStepForm">
+          <div data-aos="fade-up" className="col-md-12 MultiStepForm">
             <MultiStepForm />
 
           </div>
@@ -33,6 +40,6 @@ export default function Home() {
       <Advantage />
       <Inquery />
       <Footer />
-    </div>
+    </div >
   )
 }
