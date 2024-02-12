@@ -2,12 +2,6 @@
 import { useState } from 'react';
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-import {
-  CircularInput,
-  CircularTrack,
-  CircularProgress,
-  CircularThumb
-} from 'react-circular-input'
 import Image from 'next/image'
 
 const MultiStepForm = () => {
@@ -26,10 +20,9 @@ const MultiStepForm = () => {
   const [error, setError] = useState('');
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(null);
   const { t } = useTranslation('en', { useSuspense: false });
-  const [value, setValue] = useState(0.25)
-  const stepValue = v => Math.round(v * 10) / 10
-  const electricityUse = value * 100;
-  console.log(electricityUse)
+  const [electricityUse, setSliderValue] = useState(50); // Initial value of the slider
+
+  // console.log(electricityUse)
   const handleButtonClick = (value) => {
     setFormData({ ...formData, [`step${step}`]: value });
     setTimeout(() => {
@@ -57,6 +50,9 @@ const MultiStepForm = () => {
   const handleBackButtonClick = () => {
     setStep(step - 1);
   };
+  const handleSliderChange = (event) => {
+    setSliderValue(event.target.value);
+  };
 
   const handleNextButtonClick = (e) => {
     e.preventDefault();
@@ -82,7 +78,6 @@ const MultiStepForm = () => {
 
   const handleSendRequest = (e) => {
     e.preventDefault();
-
     if (step === 10 && !salutation) {
       setError('Salutation.  can\'t be empty');
     } else if (step === 10 && !first_name) {
@@ -109,22 +104,10 @@ const MultiStepForm = () => {
         }
       ]
       console.log('Request sent:', formData);
+      console.log('info:', info);
       setStep(step + 1); // Move to thank you message step
     }
   };
-  // "stepform": {
-  //   "main_heading1": "Your PV provider check in 10 steps:",
-  //     "laststep": "<h2>Done !</h2><p>Thank you very much for your inquiry and your trust! We look forward to finding the right provider for you and willget back to you as soon as possible! <br/> <br/> Would you like to make further inquiries ? To do this, simply click on the“ Further inquiry” button. </p>",
-  //       "formdata": {
-  //     "step1": {
-  //       "heading": "Where should the PV system be installed?",
-  //         "option1": "Detached house",
-  //           "option2": "Apartment building",
-  //             "option3": "Commercial buildings",
-  //               "option4": "Miscellaneous"
-  //     }
-  //   },
-
   return (
     <div className="multistep-form">
       <h2>{t('stepform.main_heading1')}</h2>
@@ -225,17 +208,18 @@ const MultiStepForm = () => {
         <form>
           <div className="text-center">
             <h2>{step}.  {t('stepform.formdata.step5.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-            <CircularInput
-              value={stepValue(value)}
-              onChange={v => setValue(stepValue(v))}
-            >
-              <CircularTrack />
-              <CircularProgress />
-              <CircularThumb />
-              <text x={100} y={100} textAnchor="middle" dy="0.4em" fontWeight="bold">
-                {Math.round(stepValue(value) * 100)}</text>
-            </CircularInput>
+            <div className="range-slider-container">
+              <p>{electricityUse}  kWh </p>
+              <input
+                type="range"
+                min="0"
+                max="30000"
+                value={electricityUse}
+                onChange={handleSliderChange}
+                className="slider"
 
+              />
+            </div>
           </div>
           <div>
             <button className="backbtn" type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>
@@ -268,7 +252,7 @@ const MultiStepForm = () => {
           <form>
             <div>
               <h2>{step}. {t('stepform.formdata.step7.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage including installation')} style={formData[`step${step}`] === 'PV system Electricity storage including installation' ? { backgroundColor: '#f18700' } : {}}>PV system <br /> <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option1') }} /> </button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage including installation')} style={formData[`step${step}`] === 'PV system Electricity storage including installation' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option1') }} /> </button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage Self-construction')} style={formData[`step${step}`] === 'PV system  Electricity storage Self-construction' ? { backgroundColor: '#f18700' } : {}}>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option2') }} />
               </button>
@@ -334,8 +318,28 @@ const MultiStepForm = () => {
           <form>
             <h2>{step}. {t('stepform.formdata.step10.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
             <div className="row">
-              <div className="col-3">
-                <input className="w-full h-15 bg-gray-300 text-gray-900 mt-3 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" value={salutation} placeholder={t('stepform.formdata.step10.Salutation')} onChange={(e) => setSalutation(e.target.value)} />
+              <div className="col-6">
+                <div className="float-left">
+                  <input className="salutation"
+                    type="radio"
+                    id="mr"
+                    name="salutation"
+                    value="Mr."
+                    checked={salutation === "Mr."}
+                    onChange={() => setSalutation("Mr.")}
+                  />
+                  <label htmlFor="mr">&nbsp;&nbsp;Mr.&nbsp;&nbsp;&nbsp;</label>
+                  <input className="salutation"
+                    type="radio"
+                    id="mrs"
+                    name="salutation"
+                    value="mrs"
+                    checked={salutation === "mrs"}
+                    onChange={() => setSalutation("mrs")}
+                  />
+                  <label htmlFor="Mrs.">&nbsp;Mrs.</label>
+                </div>
+
               </div>
               <div className="row">
                 <div className=" col-6" >

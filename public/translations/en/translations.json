@@ -98,9 +98,9 @@
             },
             "step7": {
                 "heading": "Which photovoltaic system do you want?",
-                "option1": "Electricity storage  <br /> including installation",
-                "option2": " PV system  <br />  Electricity storage < br / > Self - construction ",
-                "option3": " Incl .  <br />Smart Energy  Management",
+                "option1": "Electricity storage  <br/> including installation",
+                "option2": " PV system  <br/>  Electricity storage <br/> Self - construction ",
+                "option3": " Incl .  <br/>Smart Energy  Management",
                 "option4": "Extension  existing  Incl. PV system "
 
             },

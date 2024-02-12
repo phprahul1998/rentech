@@ -41,6 +41,10 @@
     border-radius: 20px;
 }
 
+.commonbtn p {
+    color: #fff !important;
+}
+
 .commonbtn img {
     display: block;
     margin-left: auto;
@@ -127,11 +131,89 @@
 
 /* CSS */
 
-.step-content {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
+.slider-container {
+    width: 300px;
+    /* Adjust as needed */
+    margin: 20px;
 }
 
-.step-content.hidden {
-    opacity: 0;
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    background: #d9d9d9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #f18700;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    /* Adjust thumb width */
+    height: 20px;
+    /* Adjust thumb height */
+    background: #4CAF50;
+    /* Adjust thumb color */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+/* Styling for radio buttons */
+
+.salutation[type="radio"] {
+    display: inline-block;
+    /* Display inline */
+    appearance: none;
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    /* For older versions of WebKit browsers */
+    -moz-appearance: none;
+    /* For older versions of Firefox */
+    width: 1.5em;
+    /* Increase size */
+    height: 1.5em;
+    /* Increase size */
+    border: 2px solid #f18700;
+    border-radius: 50%;
+    /* Make it round */
+    outline: none;
+    /* Remove outline */
+    cursor: pointer;
+    /* Change cursor on hover */
+    vertical-align: middle;
+    /* Align vertically */
+}
+
+
+/* Styling for checked state of radio buttons */
+
+.salutation[type="radio"]:checked {
+    background-color: #f18700;
+    /* Change background color */
+}
+
+.salutation label {
+    display: inline-block;
+    /* Display inline */
+    margin-right: 1em;
+    /* Add space between radio button and label */
+    cursor: pointer;
+    /* Change cursor on hover */
+    vertical-align: middle;
+    /* Align vertically */
 }

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from "next/link";
 import Image from 'next/image'
+
 import { useTranslation } from "react-i18next";
 export default function Advantage() {
     const { t, i18n } = useTranslation('en', { useSuspense: false });
