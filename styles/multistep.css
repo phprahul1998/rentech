@@ -4,13 +4,13 @@
 }
 
 .MultiStepForm h2 {
-    color: #787878 !important;
+    color: #fff !important;
     text-align: left;
     margin-bottom: 30px;
 }
 
 .multistep-form form h2 {
-    color: #000 !important;
+    color: #fff !important;
     font-size: 18px !important;
     text-align: left;
     margin-top: 30px;
@@ -22,23 +22,31 @@
     right: 20px;
     top: 105px;
     font-size: 28px;
-    color: #F18700;
+    color: #41A634;
 }
 
 .commonbtn {
     display: inline-block;
-    width: 210px;
+    width: 160px;
     background-color: #7A7A7A;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
+    font-size: 12px;
     color: #fff;
     text-align: center;
     height: 140px;
-    font-weight: 600;
     align-items: center;
+    overflow: hidden;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.commonbtn:hover {
+    background-color: #555555;
+    border: 3px solid #fff;
+    /* Change the border style and color as desired */
 }
 
 .commonbtn p {
@@ -69,7 +77,7 @@
 }
 
 .dotted-line span.completed {
-    border-bottom-color: #F18700;
+    border-bottom-color: #41A634;
 }
 
 
@@ -78,7 +86,7 @@
 @media (max-width: 768px) {
     .commonbtn {
         display: inline-block;
-        width: 45%;
+        width: 40%;
         margin: 1% 1%;
         font-size: 12px;
         height: 115px
@@ -114,7 +122,7 @@
 }
 
 .nextbtn {
-    background: #F18700;
+    background: #41A634;
     padding: 10px;
     width: 135px;
     margin: 5px;
@@ -156,7 +164,7 @@
     appearance: none;
     width: 30px;
     height: 30px;
-    background: #f18700;
+    background: #41A634;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -188,7 +196,7 @@
     /* Increase size */
     height: 1.5em;
     /* Increase size */
-    border: 2px solid #f18700;
+    border: 2px solid #41A634;
     border-radius: 50%;
     /* Make it round */
     outline: none;
@@ -203,7 +211,7 @@
 /* Styling for checked state of radio buttons */
 
 .salutation[type="radio"]:checked {
-    background-color: #f18700;
+    background-color: #41A634;
     /* Change background color */
 }
 

@@ -1,7 +1,9 @@
 {
     "menu": {
         "home": "Home",
-        "about": "About"
+        "about": "About Us",
+        "service": "Services",
+        "contact_us": "Contact Us"
     },
     "home": {
         "main_heading": "Welcome to the free PV provider check!",

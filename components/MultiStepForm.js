@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { AiOutlineExclamationCircle } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import Image from 'next/image'
-
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState([]);
@@ -20,14 +19,12 @@ const MultiStepForm = () => {
   const [error, setError] = useState('');
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(null);
   const { t } = useTranslation('en', { useSuspense: false });
-  const [electricityUse, setSliderValue] = useState(50); // Initial value of the slider
-
-  // console.log(electricityUse)
+  const [electricityUse, setSliderValue] = useState(50);
   const handleButtonClick = (value) => {
     setFormData({ ...formData, [`step${step}`]: value });
     setTimeout(() => {
       setStep(step + 1);
-    }, 1000);
+    }, 900);
   };
 
   const gotofirst = () => {
@@ -126,7 +123,7 @@ const MultiStepForm = () => {
           <h2>{step}. {t('stepform.formdata.step1.heading')}  </h2> <span><AiOutlineExclamationCircle /></span>
           <button className="commonbtn" type="button"
             onClick={() => handleButtonClick('detached_house')}
-            style={formData[`step${step}`] === 'detached_house' ? { backgroundColor: '#f18700' } : {}}
+            style={formData[`step${step}`] === 'detached_house' ? { backgroundColor: '#41A634', border: '3px solid #fff', border: '3px solid #fff' } : {}}
           >
             <img className="" src="/img/Detached_house.png" alt="" width={40}
               height={40} />
@@ -136,20 +133,20 @@ const MultiStepForm = () => {
           </button>
           <button className="commonbtn" type="button"
             onClick={() => handleButtonClick('Apartment_building')}
-            style={formData[`step${step}`] === 'Apartment_building' ? { backgroundColor: '#f18700' } : {}}
+            style={formData[`step${step}`] === 'Apartment_building' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}
           > <img className="" src="/img/apart.png" alt="" width={40}
               height={40} />
             {t('stepform.formdata.step1.option2')}</button>
           <button className="commonbtn" type="button"
 
             onClick={() => handleButtonClick('Commercial_buildings')}
-            style={formData[`step${step}`] === 'Commercial_buildings' ? { backgroundColor: '#f18700' } : {}}
+            style={formData[`step${step}`] === 'Commercial_buildings' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}
           > <img className="" src="/img/commercial.png" alt="" width={40}
               height={40} />
             {t('stepform.formdata.step1.option3')}        </button>
           <button className="commonbtn" type="button"
             onClick={() => handleButtonClick('Miscellaneous')}
-            style={formData[`step${step}`] === 'Miscellaneous' ? { backgroundColor: '#f18700' } : {}}
+            style={formData[`step${step}`] === 'Miscellaneous' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}
           > <img className="" src="/img/more.png" alt="" width={40}
               height={40} />
             {t('stepform.formdata.step1.option4')}
@@ -161,10 +158,10 @@ const MultiStepForm = () => {
         <form>
           <div>
             <h2>{step}.  {t('stepform.formdata.step2.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_m2')} style={formData[`step${step}`] === '25_m2' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step2.option1')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_40_m2')} style={formData[`step${step}`] === '25_40_m2' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step2.option2')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('40_100_m2')} style={formData[`step${step}`] === '40_100_m2' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step2.option3')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('over_100_m2')} style={formData[`step${step}`] === 'over_100_m2' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step2.option4')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_m2')} style={formData[`step${step}`] === '25_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step2.option1')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_40_m2')} style={formData[`step${step}`] === '25_40_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step2.option2')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('40_100_m2')} style={formData[`step${step}`] === '40_100_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step2.option3')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('over_100_m2')} style={formData[`step${step}`] === 'over_100_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step2.option4')}</button>
           </div>
           <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>
@@ -177,10 +174,10 @@ const MultiStepForm = () => {
         <form>
           <div>
             <h2>{step}. {t('stepform.formdata.step3.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Flat_roof')} style={formData[`step${step}`] === 'Flat_roof' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step2.option1')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Gable_roof')} style={formData[`step${step}`] === 'Gable_roof' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step1.option2')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hip_roof')} style={formData[`step${step}`] === 'Hip_roof' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step1.option3')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Other')} style={formData[`step${step}`] === 'Other' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step1.option4')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Flat_roof')} style={formData[`step${step}`] === 'Flat_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step2.option1')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Gable_roof')} style={formData[`step${step}`] === 'Gable_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step1.option2')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hip_roof')} style={formData[`step${step}`] === 'Hip_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step1.option3')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Other')} style={formData[`step${step}`] === 'Other' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step1.option4')}</button>
           </div>
           <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>
@@ -193,10 +190,10 @@ const MultiStepForm = () => {
         <form>
           <div>
             <h2>{step}.   {t('stepform.formdata.step4.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('South')} style={formData[`step${step}`] === 'South' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step4.option1')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('East')} style={formData[`step${step}`] === 'East' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step4.option2')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('West')} style={formData[`step${step}`] === 'West' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step4.option3')}</button>
-            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Southwest_southeast')} style={formData[`step${step}`] === 'Southwest_southeast' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step4.option4')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('South')} style={formData[`step${step}`] === 'South' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step4.option1')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('East')} style={formData[`step${step}`] === 'East' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step4.option2')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('West')} style={formData[`step${step}`] === 'West' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step4.option3')}</button>
+            <button className="commonbtn" type="button" onClick={() => handleButtonClick('Southwest_southeast')} style={formData[`step${step}`] === 'Southwest_southeast' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step4.option4')}</button>
           </div>
           <div className="backbtn">
             <button type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>
@@ -235,10 +232,10 @@ const MultiStepForm = () => {
           <form>
             <div>
               <h2>{step}.   {t('stepform.formdata.step6.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Immediately')} style={formData[`step${step}`] === 'Immediately' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step6.option1')}</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 1 - 3 months')} style={formData[`step${step}`] === 'in 1 - 3 months' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step6.option2')}months</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 3 - 6  months')} style={formData[`step${step}`] === 'in 3 - 6  months' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step6.option3')} months</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Indefinite')} style={formData[`step${step}`] === 'Indefinite' ? { backgroundColor: '#f18700' } : {}}> {t('stepform.formdata.step6.option4')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Immediately')} style={formData[`step${step}`] === 'Immediately' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step6.option1')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 1 - 3 months')} style={formData[`step${step}`] === 'in 1 - 3 months' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step6.option2')}months</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 3 - 6  months')} style={formData[`step${step}`] === 'in 3 - 6  months' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step6.option3')} months</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Indefinite')} style={formData[`step${step}`] === 'Indefinite' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> {t('stepform.formdata.step6.option4')}</button>
 
             </div>
             <div className="backbtn">
@@ -252,12 +249,12 @@ const MultiStepForm = () => {
           <form>
             <div>
               <h2>{step}. {t('stepform.formdata.step7.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage including installation')} style={formData[`step${step}`] === 'PV system Electricity storage including installation' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option1') }} /> </button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage Self-construction')} style={formData[`step${step}`] === 'PV system  Electricity storage Self-construction' ? { backgroundColor: '#f18700' } : {}}>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage including installation')} style={formData[`step${step}`] === 'PV system Electricity storage including installation' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option1') }} /> </button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage Self-construction')} style={formData[`step${step}`] === 'PV system  Electricity storage Self-construction' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option2') }} />
               </button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Incl. Smart Energy  Management ')} style={formData[`step${step}`] === ' Incl. Smart Energy  Management ' ? { backgroundColor: '#f18700' } : {}}> <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option3') }} /> </button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('extension  existing PV system ')} style={formData[`step${step}`] === 'Extension  existing PV system ' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option4') }} />  </button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Incl. Smart Energy  Management ')} style={formData[`step${step}`] === ' Incl. Smart Energy  Management ' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}> <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option3') }} /> </button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('extension  existing PV system ')} style={formData[`step${step}`] === 'Extension  existing PV system ' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option4') }} />  </button>
             </div>
             <div className="backbtn">
               <button type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>
@@ -270,10 +267,10 @@ const MultiStepForm = () => {
           <form>
             <div>
               <h2>{step}. {t('stepform.formdata.step8.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Equity capital')} style={formData[`step${step}`] === 'Equity capital' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option1') }} />  </button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('financing')} style={formData[`step${step}`] === 'financing' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option2') }} /></button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('both')} style={formData[`step${step}`] === 'both' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option3') }} /></button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hire purchase')} style={formData[`step${step}`] === 'Hire purchase' ? { backgroundColor: '#f18700' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option4') }} /></button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Equity capital')} style={formData[`step${step}`] === 'Equity capital' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option1') }} />  </button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('financing')} style={formData[`step${step}`] === 'financing' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option2') }} /></button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('both')} style={formData[`step${step}`] === 'both' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option3') }} /></button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hire purchase')} style={formData[`step${step}`] === 'Hire purchase' ? { backgroundColor: '#41A634', border: '3px solid #fff' } : {}}><p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option4') }} /></button>
             </div>
             <div className="backbtn">
               <button type="button" onClick={handleBackButtonClick}>{t('button.btnBack')}</button>

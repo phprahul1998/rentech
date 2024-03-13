@@ -1,7 +1,10 @@
 {
     "menu": {
         "home": "Startseite",
-        "about": "Über uns"
+        "about": "Über uns",
+        "service": "Dienstleistungen",
+        "contact_us": "Kontaktiere uns"
+
     },
     "home": {
         "main_heading": "Willkommen beim kostenlosen PV-Anbieter-Check!",

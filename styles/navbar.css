@@ -4,10 +4,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 20;
-    border-bottom: 10px solid #F8C380;
 }
 
 .nav-container {
@@ -29,7 +28,7 @@
 }
 
 .nav-logo {
-    color: #F8C380;
+    color: #41A634;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -42,7 +41,8 @@
     display: flex;
     list-style: none;
     text-align: center;
-    margin-right: 12rem;
+    margin-right: 4rem;
+    margin-top: 0rem
 }
 
 .nav-links {
@@ -78,12 +78,11 @@
 
 .nav-item:hover:after {
     width: 100%;
-    background: #F8C380;
+    border-bottom: 1px solid #41A634;
 }
 
 .nav-item.active {
-    color: #F8C380;
-    border: 1px solid #F8C380;
+    border-bottom: 2px solid #41A634;
 }
 
 .nav-icon {
@@ -110,7 +109,7 @@
         z-index: 1;
     }
     .nav-item .active {
-        color: #F8C380;
+        color: #41A634;
         border: none;
     }
     .nav-links {
@@ -148,9 +147,9 @@
     right: 20px;
     grid-template-columns: repeat(2, 1fr);
     width: 100px;
-    border: 2px solid #F8C380;
+    border: 2px solid #41A634;
     border-radius: 20px;
-    background: #F18700;
+    background: #41A634;
     color: #343434;
     cursor: pointer;
     font-size: 12px;
@@ -199,4 +198,90 @@
 .toggleCheckbox+.toggleContainer div:last-child {
     color: white;
     transition: color 0.3s;
+}
+
+.topbar-left ul li {
+    display: inline-block;
+}
+
+.topbar-area {
+    background: #020e29;
+}
+
+.topbar-area ul {
+    padding-top: 15px;
+}
+
+.topbar-left ul li a {
+    color: #d5d5d5;
+    display: block;
+    margin-right: 20px;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topbar-left ul li a svg {
+    color: #41A634;
+    font-size: 16px;
+    padding-right: 7px;
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .topbar-area {
+        display: none;
+    }
+}
+
+.quote-button {
+    float: right;
+}
+
+.quote-button .quote-btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    background: #41A634;
+    display: inline-block;
+    border: 1px solid #41A634;
+    padding: 7px 10px;
+    margin-top: 10px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.quote-button .quote-btn:hover {
+    background: transparent;
+    color: #41A634;
+    transition: 0.4s;
+}
+
+.slogan {
+    margin-bottom: 0px;
+    padding: 16px 0px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.logo-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #41A634;
+    z-index: 10;
+    width: 90px;
+    height: 100%;
+}
+
+.logo-bg:after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 100px solid #41A634;
+    z-index: 10;
 }
