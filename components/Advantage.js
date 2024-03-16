@@ -21,9 +21,9 @@ export default function Advantage() {
                             <div className="row">
                                 <div className="col-md-6 col-sm-6 col-xs-12">
                                     <div className="about-image">
-                                       <Image src={`${t(advantage.image)}`} alt="" className="ab-first-img" />
-                                       <Image src={`${t(advantage.thumbnail)}`} alt="" className="ab-second-img" />
-                                        <a  target='_blank' href={`${t(advantage.videlink)}`} rel="noopener noreferrer" className="video-play vid-zone">
+                                       <img src={`${t(advantage.image)}`} alt="" className="ab-first-img" />
+                                       <img src={`${t(advantage.thumbnail)}`} alt="" className="ab-second-img" />
+                                        <a target='_blank' href={`${t(advantage.videlink)}`}  rel="noopener noreferrer" className="video-play vid-zone">
                                        <FaPlayCircle />
                                         </a>
                                     </div>

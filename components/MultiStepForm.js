@@ -131,7 +131,7 @@ const MultiStepForm = () => {
             onClick={() => handleButtonClick('detached_house')}
             style={formData[`step${step}`] === 'detached_house' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff', border: '3px solid #fff' } : {}}
           >
-            <Image className="" src="/img/1_Einfamilienhaus.png" alt="" width={60}
+            <img className="" src="/img/1_Einfamilienhaus.png" alt="" width={60}
               height={60} />
             {t('stepform.formdata.step1.option1')}
 
@@ -139,20 +139,20 @@ const MultiStepForm = () => {
           <button className="commonbtn" type="button"
             onClick={() => handleButtonClick('Apartment_building')}
             style={formData[`step${step}`] === 'Apartment_building' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}
-          > <Image className="" src="/img/1_Mehrfamilienhaus.png" alt="" width={60}
+          > <img className="" src="/img/1_Mehrfamilienhaus.png" alt="" width={60}
               height={60} />
             {t('stepform.formdata.step1.option2')}</button>
           <button className="commonbtn" type="button"
 
             onClick={() => handleButtonClick('Commercial_buildings')}
             style={formData[`step${step}`] === 'Commercial_buildings' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}
-          > <Image className="" src="/img/1_Gewerbegebaude.png" alt="" width={60}
+          > <img className="" src="/img/1_Gewerbegebaude.png" alt="" width={60}
               height={60} />
             {t('stepform.formdata.step1.option3')}        </button>
           <button className="commonbtn" type="button"
             onClick={() => handleButtonClick('Miscellaneous')}
             style={formData[`step${step}`] === 'Miscellaneous' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}
-          > <Image className="" src="/img/1_Sonstiges.png" alt="" width={60}
+          > <img className="" src="/img/1_Sonstiges.png" alt="" width={60}
               height={60} />
             {t('stepform.formdata.step1.option4')}
           </button>
@@ -164,17 +164,17 @@ const MultiStepForm = () => {
           <div>
             <h2>{step}.  {t('stepform.formdata.step2.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_m2')} style={formData[`step${step}`] === '25_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}> 
-              <Image className="" src="/img/2_bis_25m2.png" alt="" width={60}
+              <img className="" src="/img/2_bis_25m2.png" alt="" width={60}
               height={60} />
               {t('stepform.formdata.step2.option1')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('25_40_m2')} style={formData[`step${step}`] === '25_40_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-             <Image className="" src="/img/2_25-40m2.png" alt="" width={60} height={60}/>
+             <img className="" src="/img/2_25-40m2.png" alt="" width={60} height={60}/>
                {t('stepform.formdata.step2.option2')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('40_100_m2')} style={formData[`step${step}`] === '40_100_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                           <Image className="" src="/img/2_40-100m2.png" alt="" width={60} height={60}/>
+                           <img className="" src="/img/2_40-100m2.png" alt="" width={60} height={60}/>
                {t('stepform.formdata.step2.option3')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('over_100_m2')} style={formData[`step${step}`] === 'over_100_m2' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff',color:'#fff' } : {}}>
-              <Image className="" src="/img/1_Sonstiges.png" alt="" width={60}
+              <img className="" src="/img/1_Sonstiges.png" alt="" width={60}
               height={60} />
                {t('stepform.formdata.step2.option4')}</button>
           </div>
@@ -190,17 +190,17 @@ const MultiStepForm = () => {
           <div>
             <h2>{step}. {t('stepform.formdata.step3.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('Flat_roof')} style={formData[`step${step}`] === 'Flat_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-              <Image className="" src="/img/3_Flachdach.png" alt="" width={60} height={60}/>
+              <img className="" src="/img/3_Flachdach.png" alt="" width={60} height={60}/>
                {t('stepform.formdata.step3.option1')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('Gable_roof')} style={formData[`step${step}`] === 'Gable_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}> 
-            <Image className="" src="/img/3_Satteldach.png" alt="" width={60} height={60}/>
+            <img className="" src="/img/3_Satteldach.png" alt="" width={60} height={60}/>
               {t('stepform.formdata.step3.option2')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hip_roof')} style={formData[`step${step}`] === 'Hip_roof' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-            <Image className="" src="/img/3_Walmdach.png" alt="" width={60} height={60}/>
+            <img className="" src="/img/3_Walmdach.png" alt="" width={60} height={60}/>
    
                {t('stepform.formdata.step3.option3')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('Other')} style={formData[`step${step}`] === 'Other' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-            <Image className="" src="/img/1_Sonstiges.png" alt="" width={60} height={60}/>
+            <img className="" src="/img/1_Sonstiges.png" alt="" width={60} height={60}/>
                {t('stepform.formdata.step3.option4')}</button>
           </div>
           <div className="backbtn">
@@ -215,18 +215,18 @@ const MultiStepForm = () => {
           <div>
             <h2>{step}.   {t('stepform.formdata.step4.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('South')} style={formData[`step${step}`] === 'South' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                          <Image className="" src="/img/4_Suden.png" alt="" width={60} height={60}/>
+                          <img className="" src="/img/4_Suden.png" alt="" width={60} height={60}/>
                {t('stepform.formdata.step4.option1')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('East')} style={formData[`step${step}`] === 'East' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                          <Image className="" src="/img/4_Osten.png" alt="" width={60} height={60}/>
+                          <img className="" src="/img/4_Osten.png" alt="" width={60} height={60}/>
 
                {t('stepform.formdata.step4.option2')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('West')} style={formData[`step${step}`] === 'West' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                          <Image className="" src="/img/4_Westen.png" alt="" width={60} height={60}/>
+                          <img className="" src="/img/4_Westen.png" alt="" width={60} height={60}/>
 
                {t('stepform.formdata.step4.option3')}</button>
             <button className="commonbtn" type="button" onClick={() => handleButtonClick('Southwest_southeast')} style={formData[`step${step}`] === 'Southwest_southeast' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff',Color:'#fff' } : {}}> 
-                          <Image className="" src="/img/4_Sudwest-Sudost.png" alt="" width={60} height={60}/>
+                          <img className="" src="/img/4_Sudwest-Sudost.png" alt="" width={60} height={60}/>
 
               {t('stepform.formdata.step4.option4')}</button>
           </div>
@@ -268,10 +268,10 @@ const MultiStepForm = () => {
           <form>
             <div>
               <h2>{step}.   {t('stepform.formdata.step6.heading')} </h2> <span><AiOutlineExclamationCircle /></span>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Immediately')} style={formData[`step${step}`] === 'Immediately' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><Image className="" src="/img/6_Sofort.png" alt="" width={60} height={60}/>{t('stepform.formdata.step6.option1')}</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 1 - 3 months')} style={formData[`step${step}`] === 'in 1 - 3 months' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><Image className="" src="/img/6_in_1-3_Monaten.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option2')}</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 3 - 6  months')} style={formData[`step${step}`] === 'in 3 - 6  months' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><Image className="" src="/img/6_in_3-6_Monaten.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option3')}</button>
-              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Indefinite')} style={formData[`step${step}`] === 'Indefinite' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><Image className="" src="/img/1_Sonstiges.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option4')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Immediately')} style={formData[`step${step}`] === 'Immediately' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><img className="" src="/img/6_Sofort.png" alt="" width={60} height={60}/>{t('stepform.formdata.step6.option1')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 1 - 3 months')} style={formData[`step${step}`] === 'in 1 - 3 months' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><img className="" src="/img/6_in_1-3_Monaten.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option2')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('in 3 - 6  months')} style={formData[`step${step}`] === 'in 3 - 6  months' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><img className="" src="/img/6_in_3-6_Monaten.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option3')}</button>
+              <button className="commonbtn" type="button" onClick={() => handleButtonClick('Indefinite')} style={formData[`step${step}`] === 'Indefinite' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}><img className="" src="/img/1_Sonstiges.png" alt="" width={60} height={60}/> {t('stepform.formdata.step6.option4')}</button>
 
             </div>
             <div className="backbtn">
@@ -286,17 +286,17 @@ const MultiStepForm = () => {
             <div className="setp7">
               <h2>{step}. {t('stepform.formdata.step7.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Power storage  including installation')} style={formData[`step${step}`] === 'PV system Power storage  including installation' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}> 
-                <Image className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
+                <img className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option1') }} /> </button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('PV system Electricity storage Self-assembly')} style={formData[`step${step}`] === 'PV system  Electricity storage Self-assembly' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option2') }} />
               </button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('inclusive Smart Energy  Management ')} style={formData[`step${step}`] === ' inclusive Smart Energy  Management ' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/7_Plus.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/7_Plus.png" alt="" width={60} height={60}/>
                  <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option3') }} /> </button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('extension  existing PV system ')} style={formData[`step${step}`] === 'Extension  existing PV system ' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/7_Check.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step7.option4') }} />  </button>
             </div>
             <div className="backbtn">
@@ -311,16 +311,16 @@ const MultiStepForm = () => {
             <div>
               <h2>{step}. {t('stepform.formdata.step8.heading')}</h2> <span><AiOutlineExclamationCircle /></span>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('Equity capital')} style={formData[`step${step}`] === 'Equity capital' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/8_Eigenkapital.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/8_Eigenkapital.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option1') }} />  </button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('financing')} style={formData[`step${step}`] === 'financing' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/8_Finanzierung.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/8_Finanzierung.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option2') }} /></button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('both')} style={formData[`step${step}`] === 'both' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/8_Beides.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/8_Beides.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option3') }} /></button>
               <button className="commonbtn" type="button" onClick={() => handleButtonClick('Hire purchase')} style={formData[`step${step}`] === 'Hire purchase' ? { backgroundColor: '#41A634', border: '3px solid #fff',color:'#fff' } : {}}>
-                 <Image className="" src="/img/8_Mietkauf.png" alt="" width={60} height={60}/>
+                 <img className="" src="/img/8_Mietkauf.png" alt="" width={60} height={60}/>
                 <p dangerouslySetInnerHTML={{ __html: t('stepform.formdata.step8.option4') }} /></button>
             </div>
             <div className="backbtn">
