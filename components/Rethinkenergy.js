@@ -16,7 +16,7 @@ export default function Rethinkenergy() {
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
                 <div className="single-awesome-project">
                     <div className="awesome-img">
-<img src="img/12_Pic1.png" alt="" />
+<Image src="img/12_Pic1.png" alt="" />
 
                     </div>
                 </div>
@@ -25,17 +25,7 @@ export default function Rethinkenergy() {
              <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
                 <div className="single-awesome-project">
                     <div className="awesome-img">
-                                                   <img src="img/12_Pic2.png" alt="" />
-
-                    </div>
-                </div>
-            </div>
-
-
-             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
-                <div className="single-awesome-project">
-                    <div className="awesome-img">
-                                                  <img src="img/12_Pic3.png" alt="" />
+                                                   <Image src="img/12_Pic2.png" alt="" />
 
                     </div>
                 </div>
@@ -45,7 +35,17 @@ export default function Rethinkenergy() {
              <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
                 <div className="single-awesome-project">
                     <div className="awesome-img">
-                       <img src="img/12_Pic4.png" alt="" />
+                                                  <Image src="img/12_Pic3.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+
+
+             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
+                <div className="single-awesome-project">
+                    <div className="awesome-img">
+                       <Image src="img/12_Pic4.png" alt="" />
                     </div>
                 </div>
             </div>
