@@ -7,6 +7,7 @@ import Advantage from '../components/Advantage';
 import Inquery from '../components/Inquery';
 import Footer from '../components/Footer';
 import Slider from '../components/Slider';
+import Ourservice from '../components/Ourservice';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <div className="sectionData">
       <Slider />
+      {/*<Ourservice />*/}
       <Rethinkenergy />
       <Advantage />
       <Inquery />

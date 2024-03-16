@@ -31,21 +31,34 @@
     "rethinkenergy": {
         "rethinkheading": "Energie neu denken!",
         "subheading": "Wir vergleichen alle verfügbaren Anbieter und finden die beste Lösung für Sie!",
-        "para": "Durch die Installation eines Photovoltaik-Systems können Sie nicht nur Ihre Stromkosten senken, sondern auch Ihre Energieversorgung unabhängig gestalten und langfristig sichern. <br><br> Unser Service eignet sich sowohl für Privathaushalte als auch für Unternehmen. Wir helfen Ihnen, das optimale Angebot zu finden."
+        "para": "Indem Sie eine Photovoltaikanlage installieren, können Sie nicht nur Ihre Stromkosten senken, sondern auch Ihre Energieversorgung unabhängig gestalten und langfristig sichern. <br/> Dabei spielt es keine Rolle, ob Sie ein privates Haushalt oder ein kommerzielles Unternehmen ausstatten möchten. Wir vergleichen alle verfügbaren Anbieter <br/> und finden die optimale Lösung für Sie."
     },
     "advantages": {
         "heading": "Ihre Vorteile durch ein <br/> PV-System:",
         "box": [{
-                "heading": "Unabhängigkeit",
-                "para": "Mit Ihrem eigenen PV-System werden Sie unabhängig von steigenden Stromkosten. Sie haben die Kontrolle und können langfristig sogar Gewinne erzielen."
+                "heading": "Unabhängigkeit durch PV",
+                "image": "img/13_Unabhangigkeit.png",
+                "thumbnail": "img/13_Unabhangigkeit.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "Das System macht <br/> Sie unabhängig von steigenden <br/> Stromkosten."
             },
             {
                 "heading": "Wertsteigerung",
-                "para": "Mit Ihrem eigenen PV-System können Sie den Wert Ihrer Immobilie erheblich steigern. Photovoltaik-Systeme sind zukunftssicher und umweltfreundlich."
+                "image": "img/13_Werterhohung.png",
+                "thumbnail": "img/13_Werterhohung.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "Sie steigern den Wert <br/> Ihrer Immobilie erheblich mit <br/> einer PV-Anlage."
+            },
+            {
+                "heading": "Wirtschaftlichkeit",
+                "image": "img/13_Wirtschaftlichkeit.png",
+                "thumbnail": "img/13_Wirtschaftlichkeit.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "Mit einer PV-Anlage haben Sie <br/> die Kontrolle über Ihren Strom und können <br/> sogar Gewinne erwirtschaften."
             }
         ],
-        "ourtip": "Unser Tipp:",
-        "para": "Kennen Sie Tibber? Tibber bietet dynamische Stromtarife und ist daher ideal für PV-Betreiber mit Stromspeicher!"
+        "ourtip": "<span class='coloredtext'>Unser Tipp:</span>",
+        "para": "Weiterer Tipp: Der Stromanbieter TIBBER bietet dynamische Stromtarife und ist daher ideal für PV-Betreiber mit Stromspeicher. Weitere Informationen unter: https://tibber.com/de"
     },
     "inquery": {
         "heading": "Haben Sie Fragen?",
@@ -98,10 +111,10 @@
             },
             "step7": {
                 "heading": "Welches Photovoltaiksystem möchten Sie?",
-                "option1": "Stromspeicher <br/> inklusive Installation",
-                "option2": "PV-Anlage <br/> Stromspeicher <br/> Selbstmontage",
-                "option3": "Inkl. <br/> Smart Energy Management",
-                "option4": "Erweiterung bestehend <br/> Inkl. PV-Anlage"
+                "Option1": "PV-System <br/> Stromspeicher <br/> inklusive Installation",
+                "Option2": "PV-System <br/> Stromspeicher <br/> Selbstmontage",
+                "Option3": "Inklusiv. <br/> Smart Energy Management",
+                "Option4": "Erweiterung eines vorhandenen <br/> PV-Systems"
             },
             "step8": {
                 "heading": "Wie möchten Sie das Projekt finanzieren?",
@@ -148,5 +161,8 @@
         "regarding": "Betreffend",
         "yourmessage": "Ihre Nachricht",
         "sendmessage": "Nachricht senden"
+    },
+    "validation_msg": {
+        "error_msg": "Bitte eingeben "
     }
 }

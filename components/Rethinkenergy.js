@@ -7,21 +7,54 @@ export default function Rethinkenergy() {
     const { t, i18n } = useTranslation('en', { useSuspense: false });
 
     return (
-        <div className="container">
-            <div className="row  mb-4">
-                <div data-aos="fade-up"
-                    data-aos-duration="3000" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 rethink ">
-                    <div className="">
-                        <h2 className="text-white p-3">
-                            {t('rethinkenergy.rethinkheading')}
-                        </h2>
+   <div className="project-area area-padding">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+             <h2  className="p-2 left-headline" dangerouslySetInnerHTML={{ __html: t('rethinkenergy.rethinkheading') }} />
+            </div>
+            <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
+                <div className="single-awesome-project">
+                    <div className="awesome-img">
+<img src="img/12_Pic1.png" alt="" />
+
                     </div>
                 </div>
-                <div data-aos="fade-up" className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <h2 className="p-2">{t('rethinkenergy.subheading')}</h2>
-                    <p className="p-2" dangerouslySetInnerHTML={{ __html: t('rethinkenergy.para') }} />
+            </div>
+
+             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
+                <div className="single-awesome-project">
+                    <div className="awesome-img">
+                                                   <img src="img/12_Pic2.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+
+
+             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
+                <div className="single-awesome-project">
+                    <div className="awesome-img">
+                                                  <img src="img/12_Pic3.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+
+
+             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-12">
+                <div className="single-awesome-project">
+                    <div className="awesome-img">
+                       <img src="img/12_Pic4.png" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
+          <div className="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                        <p className="p-2" dangerouslySetInnerHTML={{ __html: t('rethinkenergy.para') }} />
+            </div>
+    </div>
+</div>
+
     )
 }

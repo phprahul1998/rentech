@@ -28,26 +28,39 @@
     },
 
     "rethinkenergy": {
-        "rethinkheading": "Rethink energy!",
+        "rethinkheading": "<span class='coloredtext'>Rethink</span> energy!",
         "subheading": "We compare all available providers and find the best solution for you!",
-        "para": "By installing a photovoltaic system, you can not only reduce your electricity costs, but also independently design your energy supply and secure it in the long term. <br><br>  Our service is suitable for both private households and commercial businesses.We will help you find the optimal offer."
+        "para": "By installing a photovoltaic system, you can not only reduce your electricity costs, but also independently design your energy supply and secure it in the long term. <br/> It doesn't matter whether you want to equip a private household or a commercial business. We compare all available providers <br/> and find the optimal solution for you."
     },
     "advantages": {
-        "heading": "Your advantages through one <br/> PV system: ",
+        "heading": "<span class='coloredtext'>Your advantages through</span> one <br/> Own PV system: ",
         "box": [{
-                "heading": "Independence",
-                "para": "By having your own PV system, you become independent of rising electricity costs. You are in control and in the long term, you can even make a profit."
+                "heading": "Independence A PV",
+                "image": "img/13_Unabhangigkeit.png",
+                "thumbnail": "img/13_Unabhangigkeit.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "System makes you <br/> independent of rising <br/> electricity costs."
             },
             {
                 "heading": "Increase in Value",
-                "para": "With your own PV system, you can significantly increase the value of your property. Photovoltaic systems are future-proof and environmentally friendly."
+                "image": "img/13_Werterhohung.png",
+                "thumbnail": "img/13_Werterhohung.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "You increase the value <br/> with a PV system your property <br/> significantly."
+            },
+            {
+                "heading": "Economic efficiency",
+                "image": "img/13_Wirtschaftlichkeit.png",
+                "thumbnail": "img/13_Wirtschaftlichkeit.png",
+                "videlink": "https://www.youtube.com/watch?v=O33uuBh6nXA",
+                "para": "With a PV system you <br/> have control over your electricity and can even <br/> generate profits."
             }
         ],
-        "ourtip": "Our tip:",
-        "para": "Do you know Tibber? Tibber offers dynamic electricity tariffs and is therefore ideal for PV operators with electricity storage!"
+        "ourtip": "<span class='coloredtext'>Our tip:</span>",
+        "para": "Another tip: The electricity provider TIBBER offers dynamic electricity tariffs and is therefore ideal for PV operators with electricity storage. More information at: https://tibber.com/de"
     },
     "inquery": {
-        "heading": "Do you have questions?",
+        "heading": "<span class='coloredtext'>Do you have</span> questions?",
         "para": "We would be happy to answer any questions you may have about the topic of “photovoltaics” free of charge and without obligation.Simply fill out the contact form and we willget in touch immediately!"
     },
 
@@ -55,7 +68,7 @@
         "para": "© Copyright Renevatec All Rights Reserved."
     },
     "stepform": {
-        "main_heading1": "Your PV provider check in 10 steps:",
+        "main_heading1": "<span class='coloredtext'>Your PV provider</span> check in 10 steps:",
         "laststep": "<h2>Done !</h2><p>Thank you very much for your inquiry and your trust! We look forward to finding the right provider for you and willget back to you as soon as possible! <br/> <br/> Would you like to make further inquiries ? To do this, simply click on the“ Further inquiry” button. </p>",
         "formdata": {
             "step1": {
@@ -100,10 +113,10 @@
             },
             "step7": {
                 "heading": "Which photovoltaic system do you want?",
-                "option1": "Electricity storage  <br/> including installation",
-                "option2": " PV system  <br/>  Electricity storage <br/> Self - construction ",
-                "option3": " Incl .  <br/>Smart Energy  Management",
-                "option4": "Extension  existing  Incl. PV system "
+                "option1": "PV system <br/> Power storage  <br/> including installation ",
+                "option2": " PV system  <br/>  Electricity storage <br/> Self - assembly ",
+                "option3": " inclusive .  <br/>Smart Energy  Management",
+                "option4": "Expansion of  <br/>  existing ones  <br/>  PV system "
 
             },
             "step8": {
@@ -152,7 +165,11 @@
         "regarding": "Regarding",
         "yourmessage": "Your Message",
         "sendmessage": "Send Message"
+    },
+    "validation_msg": {
+        "error_msg": "Please Enter "
     }
+
 
 
 

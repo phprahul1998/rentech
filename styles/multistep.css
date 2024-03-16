@@ -28,11 +28,11 @@
 .commonbtn {
     display: inline-block;
     width: 160px;
-    background-color: #7A7A7A;
+    background-color: #fff;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
     font-size: 12px;
-    color: #fff;
+    color: #000;
     text-align: center;
     height: 140px;
     align-items: center;
@@ -50,7 +50,12 @@
 }
 
 .commonbtn p {
-    color: #fff !important;
+    color: #000 !important;
+}
+
+.setp7 p {
+    font-size: 12px !important;
+    margin: 10px 0px 5px 0px
 }
 
 .commonbtn img {
@@ -224,4 +229,23 @@
     /* Change cursor on hover */
     vertical-align: middle;
     /* Align vertically */
+}
+
+.error_msg {
+    margin: 15px 0 10px 0;
+    font-size: .70rem;
+    padding: .5rem;
+    line-height: 1rem;
+    border-width: 1px;
+    border-radius: 0.375rem;
+    background-color: rgba(239, 68, 68, .1);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    border-color: rgba(239, 68, 68, 1);
+}
+
+.error_msg p {
+    margin-bottom: 0 !important;
+    font-size: 12x !important;
+    color: #41A634 !important;
 }
