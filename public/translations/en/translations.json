@@ -76,7 +76,7 @@
                 "option1": "Detached house",
                 "option2": "Apartment building",
                 "option3": "Commercial buildings",
-                "option4": "Miscellaneous"
+                "option4": "Other"
             },
             "step2": {
                 "heading": "How much space do you have available?",
