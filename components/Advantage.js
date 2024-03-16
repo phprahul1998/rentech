@@ -23,7 +23,7 @@ export default function Advantage() {
                                     <div className="about-image">
                                        <Image src={`${t(advantage.image)}`} alt="" className="ab-first-img" />
                                        <Image src={`${t(advantage.thumbnail)}`} alt="" className="ab-second-img" />
-                                        <a target='_blank' href={`${t(advantage.videlink)}`} className="video-play vid-zone">
+                                        <a  target='_blank' href={`${t(advantage.videlink)}`} rel="noopener noreferrer" className="video-play vid-zone">
                                        <FaPlayCircle />
                                         </a>
                                     </div>
