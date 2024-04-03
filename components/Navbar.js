@@ -9,8 +9,8 @@ import { FaRegClock } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 export default function Navbar() {
-  const { t, i18n } = useTranslation("fr", { useSuspense: false });
-  const [selected, setSelected] = useState("fr");
+  const { t, i18n } = useTranslation("en", { useSuspense: false });
+  const [selected, setSelected] = useState("en");
   useEffect(() => {
     // Check the domain and set the default language accordingly
     if (typeof window !== "undefined") {
