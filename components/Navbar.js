@@ -15,7 +15,7 @@ export default function Navbar() {
     // Check the domain and set the default language accordingly
     if (typeof window !== "undefined") {
       const domain = window.location.hostname;
-      if (domain === "renevatec.de") {
+      if (domain === "renevatec.de" || domain === "renevatec.com") {
         setSelected("fr");
       } else {
         setSelected("en");
